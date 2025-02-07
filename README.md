@@ -13,7 +13,7 @@ This project is designed to recognize **Indian Sign Language (ISL) hand gestures
 
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/your-username/isl-gesture-recognition.git
+git clone https://github.com/Shu-50/SIH/Sign Language.git
 cd isl-gesture-recognition
 ```
 
