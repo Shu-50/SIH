@@ -11,10 +11,10 @@ hands = mp_hands.Hands(max_num_hands=1, min_detection_confidence=0.7)
 mp_draw = mp.solutions.drawing_utils
 
 # File path to store dataset
-dataset_path = 'text to audio/model3/dataset/isl_data.csv'
+dataset_path = 'dataset/isl_data.csv'
 
 # Create dataset directory if it doesn't exist
-os.makedirs('model3/dataset', exist_ok=True)
+os.makedirs('dataset', exist_ok=True)
 
 # Check if the dataset file exists and add headers if it's empty
 file_exists = os.path.isfile(dataset_path)
@@ -22,7 +22,7 @@ file_exists = os.path.isfile(dataset_path)
 # List of headers for 21 landmarks (x, y, z for each) and the label
 headers = []
 for i in range(1, 22):  # 21 landmarks
-    headers.extend([f'landmark_{i}_x', f'landmark_{i}_y', f'landmark_{i}_z'])
+    headers.extend([f'landmark_{i}x', f'landmark{i}y', f'landmark{i}_z'])
 headers.append('label')  # Last column for the label
 
 # Write headers if the file doesn't exist or is empty
